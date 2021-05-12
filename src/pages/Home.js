@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import fire from '../fire';
-import './Home.css';
+import '../App.css';
+import FrontPage from './FrontPage';
 function Home() {
     const [user, setUser] = useState('');
     const [email, setEmail] = useState('');
@@ -73,13 +74,7 @@ function Home() {
     useEffect(() => {
         authListener();
     }, []);
-    const FrontPage = () => {
-        return (
-            <div className="front-page">
-                <h1>Login sucessfully</h1>
-            </div>
-        );
-    }
+
 
     return (
         <div className="home">
